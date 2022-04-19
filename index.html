@@ -16,12 +16,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <!-- css -->
-  <link rel="stylesheet" href="css/menu-style.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- source for icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<!-- Items to implement
+A photo gallery
+A mobile responsive site
+Navigation menu and multiple pages -->
 
-  <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #FBE555">
+<body>
+  <!--     navbar     -->
+  <nav class="navbar navbar-custom fixed-top navbar-light navbar-expand-lg" style="background-color: #FBE555">
     <div class="container-fluid">
       <a class="navbar-brand">
         <img src="images/logo.webp" alt="" width="100px" height="80px" class="d-inline-block align-text-top">
@@ -32,92 +41,158 @@
       <div class="collapse navbar-collapse" id="navbarTop">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"> Home </a>
+            <a class="nav-link" href="#home"> Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Menu </a>
+            <a class="nav-link" href="https://1popbob.github.io/menuSite/"> Menu </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> About </a>
+            <a class="nav-link" href="#about"> About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Contact </a>
+            <a class="nav-link" href="#contact"> Contact </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <h1 class="menu-title">Menu</h1>
+  <!-- Title -->
+  <section id = "home">
+    <div class="title">
+      <h1> Birrieria Apatzingan </h1>
+      <h2 class="title-subtext">Authentic Mexican Food</h2>
 
-  <h2>Soups</h2>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item1.jpg" class="card-img-top" alt="soup">
-          <div class="card-body">
-            <h3 class="card-text">Pozole</h3>
-            <p>$8.25</p>
+      <!-- title slideshow -->
+      <div id="carouselTitle" class="carousel slide carousel-fade" data-bs-ride="carousel" date-interval="500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/store-front.jpg" class="d-block w-100" alt="store-front">
+          </div>
+          <div class="carousel-item">
+            <img src="images/title-image1.jpg" class="d-block w-100" alt="food">
+          </div>
+          <div class="carousel-item">
+            <img src="images/title-image2.jpg" class="d-block w-100" alt="3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/title-image3.jpg" class="d-block w-100" alt="3">
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item2.jpg" class="card-img-top" alt="soup">
-          <div class="card-body">
-            <h3 class="card-text">Menudo</h3>
-            <p>$12.79</p>
-          </div>
+    </div>
+</section>
+
+  <!-- About us Section -->
+  <section id = "about">
+    <div class="about-us">
+      <h1>Bienvenidos! Welcome!</h1>
+      <h2 class="about-us-subtext">Dinning at our restaurant will give you a taste of Mexico!</h2>
+      <p> Here at Birrieria Apatzingan we make it our mission to provide quality Mexican food using fresh ingrediants.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+</section>
+
+  <!-- Specials -->
+  <div class="specials">
+    <h1>Our Specials</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="specials-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Tacos</h3>
+        </div>
+        <div class="card-body">
+          <img class="specials-image" src="images/food1.jpg" alt="taco plate">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item3.jpg" class="card-img-top" alt="soup">
-          <div class="card-body">
-            <h3 class="card-text">Coctel de Camaron</h3>
-            <p>$13.99</p>
-          </div>
+    </div>
+
+    <div class="specials-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Burritos</h3>
+        </div>
+        <div class="card-body">
+          <img class="specials-image" src="images/food2.jpg" alt="Birrieria plate">
+        </div>
+      </div>
+    </div>
+
+    <div class="specials-column col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Birria</h3>
+        </div>
+        <div class="card-body">
+          <img class="specials-image" src="images/food3.jpg" alt="Birrieria plate">
         </div>
       </div>
     </div>
   </div>
 
-  <h2>Birrias</h2>
+  <div class="menu-transition">
+    <h2 class="transition"><a href="https://1popbob.github.io/menuSite/">View our full menu here</a></h2>
+  </div>
 
-  <div class="container-fluid birrierias">
-    <div class="row">
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item4.jpg" class="card-img-top" alt="Birrieria">
-          <div class="card-body">
-            <h3 class="card-text">Birria Combo</h3>
-            <p>$10.99</p>
-          </div>
+  <!-- Reviews -->
+  <div class="reviews">
+    <h1 class="review-title">Reviews</h1>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="false" data-interval="600" data-pause="hover">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <span class="yelp-review" data-review-id="jv3W3hYC2oFaXu7Xi74HXg" data-hostname="www.yelp.ca">Read <a href="https://www.yelp.com/user_details?userid=jmECVuQpgR-BER6-1OnMdg" rel="nofollow noopener">Iman S.</a>'s <a
+              href="https://www.yelp.ca/biz/birrieria-apatzingan-pacoima?hrid=jv3W3hYC2oFaXu7Xi74HXg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/fNmtVF78LnWNbKfL8cETTA" rel="nofollow noopener">Birrieria Apatzingan</a> on
+            <a href="https://www.yelp.ca" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.ca/embed/widgets.js" type="text/javascript" async></script>
+          </span>
+        </div>
+        <div class="carousel-item container-fluid">
+          <span class="yelp-review" data-review-id="y9k10UVU945lLiJPjVECwg" data-hostname="www.yelp.ca">Read <a href="https://www.yelp.com/user_details?userid=9Mp6UlgA-E17faKx2GOePQ" rel="nofollow noopener">Berenis S.</a>'s <a
+              href="https://www.yelp.ca/biz/birrieria-apatzingan-pacoima?hrid=y9k10UVU945lLiJPjVECwg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/fNmtVF78LnWNbKfL8cETTA" rel="nofollow noopener">Birrieria Apatzingan</a> on
+            <a href="https://www.yelp.ca" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.ca/embed/widgets.js" type="text/javascript" async></script>
+          </span>
+        </div>
+        <div class="carousel-item container-fluid">
+          <span class="yelp-review" data-review-id="16Qj9egEem4O615MtG_02g" data-hostname="www.yelp.ca">Read <a href="https://www.yelp.com/user_details?userid=ywhA73BBKT7oWEvJ9HyrCQ" rel="nofollow noopener">Mayra O.</a>'s <a
+              href="https://www.yelp.ca/biz/birrieria-apatzingan-pacoima?hrid=16Qj9egEem4O615MtG_02g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/fNmtVF78LnWNbKfL8cETTA" rel="nofollow noopener">Birrieria Apatzingan</a> on
+            <a href="https://www.yelp.ca" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.ca/embed/widgets.js" type="text/javascript" async></script>
+          </span>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-text">Birria Chica</h3>
-            <p>$8.25</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <img src="images/item6.jpg" class="card-img-top" alt="Birrieria">
-          <div class="card-body">
-            <h3 class="card-text">Birria Grande</h3>
-            <p>$10.99</p>
-          </div>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
+  <!-- Location -->
+  <div class="location">
+    <h1 class="location-title">Our Location</h1>
+    <div class="address">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.831781510173!2d-118.42766024856033!3d34.252835814483255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29110d3f6a8ef%3A0x414fcd5988e7b29!2s10040%20Laurel%20Canyon%20Blvd%2C%20Pacoima%2C%20CA%2091331!5e0!3m2!1sen!2sus!4v1650336799123!5m2!1sen!2sus" width="100%" height="300.5rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <section id = "contact">
+    <div class="footer container-fluid">
+      <h4>Call us at (818) 890-6265</h4>
+      <h4> Birrieria Apatzingan Restaurant Unofficial Site </h4>
+    </div>
+  </section>
 
 </body>
 
