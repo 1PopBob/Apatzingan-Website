@@ -93,6 +93,35 @@ a:hover {
   padding-bottom: 40px;
 }
 
+.btn {
+  background: #FF8243;
+  background-image: -webkit-linear-gradient(top, #FF8243, #EA5C2B);
+  background-image: -moz-linear-gradient(top, #FF8243, #EA5C2B);
+  background-image: -ms-linear-gradient(top, #FF8243, #EA5C2B);
+  background-image: -o-linear-gradient(top, #FF8243, #EA5C2B);
+  background-image: linear-gradient(to bottom, #FF8243, #EA5C2B);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 36rem;
+}
+
+.btn:hover {
+  background: #FF9F45;
+  background-image: -webkit-linear-gradient(top, #FF9F45, #E83A14);
+  background-image: -moz-linear-gradient(top, #FF9F45, #E83A14);
+  background-image: -ms-linear-gradient(top, #FF9F45, #E83A14);
+  background-image: -o-linear-gradient(top, #FF9F45, #E83A14);
+  background-image: linear-gradient(to bottom, #FF9F45, #E83A14);
+  text-decoration: none;
+}
+
 /* Reviews */
 
 .yelp-review{
@@ -125,6 +154,8 @@ a:hover {
   background-color: #FBE555;
   padding: 50px 0 20px;
 }
+
+
 
 h4 {
   text-align: center;
