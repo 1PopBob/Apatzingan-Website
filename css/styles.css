@@ -21,6 +21,9 @@ p {
   width: 50%;
 }
 
+a:hover {
+  color: #FF8243;
+}
 
 .header {
   background-color: #950101;
@@ -40,15 +43,17 @@ p {
 .title-subtext {
   text-align: center;
   font-family: 'Alata', sans-serif;
+  padding-bottom: 20px;
 }
 
-.navbar-brand {
-  padding-left: 20px;
+.nav-item {
+  padding: 0 18px;
 }
 
 .navbar-custom {
   height: 100px
 }
+
 
 .collapse {
   padding-right: 30px;
